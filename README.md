@@ -4,13 +4,13 @@ This is essentially a COBOL wrapper for the C system library, to which the GnuCO
 
 Compile on the command line with
 
-  <b>cobc -x -std=IBM reverseshell.cob</b>
+  <tt>cobc -x -std=IBM reverseshell.cob</tt>
   
 The flag -x will create an executable "reverseshell", and the flag -std=IBM makes sure we use IBM COBOL as the language (the different COBOL dialects
 
 The IP address and port of the listener are hard-coded as decimal values in the variables
 
-  sin_port as 1234,
+  <tt>sin_port</tt> as 1234,
   
   sin_addr as 167772173.
   
