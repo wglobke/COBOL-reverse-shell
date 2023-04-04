@@ -6,7 +6,7 @@ Compile on the command line with
 
   <tt>cobc -x -std=IBM reverseshell.cob</tt>
   
-The flag -x will create an executable "reverseshell", and the flag -std=IBM makes sure we use IBM COBOL as the language (the different COBOL dialects
+The flag -x will create an executable "reverseshell", and the flag -std=IBM makes sure we use IBM COBOL as the language (the different COBOL dialects are obscenely incompatible with one another, so it is likely this code will not run with any other).
 
 The IP address and port of the listener are hard-coded as decimal values in the variables
 
