@@ -16,7 +16,7 @@ The IP address and port of the listener are hard-coded as decimal values in the 
   
 Replace these by your own values. Note that you do not have to reverse the byte order to Big Endian (as is required by the socket call), because this is done automatically when GnuCOBOL compiles the program.
 
-It is interesting to see the corresponding C-code, which can be obtained by
+It is interesting to see the corresponding C-code. This can be obtained by
 
   <tt>cobc -C -std=IBM reverseshell.cob</tt>
   
