@@ -12,20 +12,23 @@ The IP address and port of the listener are hard-coded as decimal values in the 
 
   <tt>sin_port</tt> as 1234,
   
-  sin_addr as 167772173.
+  <tt>sin_addr</tt> as 167772173.
   
 Replace these by your own values. Note that you do not have to reverse the byte order to Big Endian (as is required by the socket call), because this is done automatically when GnuCOBOL compiles the program.
 
 It is interesting to see the corresponding C-code, which can be obtained by
 
-  cobc -C -std=IBM reverseshell.cob
+  <tt>cobc -C -std=IBM reverseshell.cob</tt>
   
 which creates three files,
 
-  reverseshell.c.h    # global variables
+   <tt>reverseshell.c.h</tt>     global variables
   
-  reverseshell.c.l.h  # local variables
+   <tt>reverseshell.c.l.h</tt>   local variables
   
-  reverseshell.c      # program as a library
+   <tt>reverseshell.c</tt>       program as a library
   
 These files are particularly helpful when debugging function calls to the C-library.
+
+Of course this is a silly idea. :)
+
