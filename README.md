@@ -1,5 +1,5 @@
 # COBOL-reverse-shell
-Reverse shell in for GnuCOBOL, written in the IBM COBOL standard.
+Reverse shell for GnuCOBOL, written in the IBM COBOL standard.
 This is essentially a COBOL wrapper for the C system library, to which the GnuCOBOL runtime allows easy access.
 
 Compile on the command line with
