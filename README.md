@@ -19,7 +19,7 @@ Replace these by your own values. Note that you do not have to reverse the byte 
 
   <tt>sin_len_sin_family</tt> as 2
 
-since this will be byte-swapped by IBM COBOL and thus be put in the correct order for the <tt>sockaddr</tt> structure.
+since this will be byte-swapped by IBM COBOL and thus be put in the correct order for the <tt>sockaddr</tt> structure. If you want to run this on Linux, there is no <tt>sin_len</tt> field, but <tt>sin_family</tt> is two bytes long instead, so the overall size does not differ. To get the order right after the byte-swap, you would have to assign the value 0x0200, or decimal 512, to the variable <tt>sin_len_sin_family</tt> on Linux.
 
 It is interesting to see the corresponding C-code. This can be obtained by
 
