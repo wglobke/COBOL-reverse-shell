@@ -4,7 +4,7 @@ This is essentially a COBOL wrapper for the C system library, to which the GnuCO
 
 Compile on the command line with
 
-  <tt>cobc -x -std=IBM reverseshell.cob</tt>
+  <tt>cobc -x -std=ibm reverseshell.cob</tt>
   
 The flag -x will create an executable "reverseshell", and the flag -std=IBM makes sure we use IBM COBOL as the language (the different COBOL dialects are obscenely incompatible with one another, so it is likely this code will not run with any other).
 
